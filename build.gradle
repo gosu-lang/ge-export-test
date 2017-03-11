@@ -1,0 +1,19 @@
+plugins {
+    id 'org.gosu-lang.gosu' version '0.2.2'
+}
+
+wrapper {
+    gradleVersion '3.3'
+}
+
+repositories {
+  mavenLocal()
+  maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' } // for Gosu snapshots
+  mavenCentral()
+}
+
+dependencies {
+//  compile 'org.gosu-lang.gosu:gosu-core-api:1-X-SNAPSHOT'
+  compile 'com.guidewire:ge-export-api:0.1-SNAPSHOT'
+  runtime 'com.guidewire:ge-export:0.1-SNAPSHOT'
+}
