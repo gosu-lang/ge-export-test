@@ -1,4 +1,4 @@
-A demonstration project for the ge-export API for extracting data from a Gradle Enterprise server.
+A demonstration project for the [ge-export API](https://github.com/gosu-lang/ge-export) for extracting data from a Gradle Enterprise server.
 
 Requirements:
 - JDK 8

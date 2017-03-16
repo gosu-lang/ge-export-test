@@ -8,20 +8,12 @@ wrapper {
 
 repositories {
   mavenLocal()
-  maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' } // for Gosu snapshots
+  maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' } // for snapshots
   mavenCentral()
 }
 
 dependencies {
-  compile 'com.guidewire:ge-export-api:0.1-SNAPSHOT'
-  runtime 'com.guidewire:ge-export:0.1-SNAPSHOT'
+  compile 'org.gosu-lang:ge-export-api:0.1-SNAPSHOT'
+  runtime 'org.gosu-lang:ge-export:0.1-SNAPSHOT'
   runtime files("${System.properties['java.home']}/../lib/tools.jar")
 }
-
-//task debug << {
-//    println("java.home:" + files("${System.properties['java.home']}/../lib/tools.jar").files)
-//    println('compile config:')
-//    configurations.compile.each { println it }
-//    println('runtime config:')
-//    configurations.runtime.each { println it }
-//}
