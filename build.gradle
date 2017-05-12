@@ -1,9 +1,9 @@
 plugins {
-    id 'org.gosu-lang.gosu' version '0.2.2'
+    id 'java'
 }
 
 wrapper {
-    gradleVersion '3.3'
+    gradleVersion '3.5'
 }
 
 repositories {
