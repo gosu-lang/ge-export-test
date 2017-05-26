@@ -13,7 +13,14 @@ repositories {
 }
 
 dependencies {
-  compile 'org.gosu-lang:ge-export-api:0.1-SNAPSHOT'
-  runtime 'org.gosu-lang:ge-export:0.1-SNAPSHOT'
+  compile "org.gosu-lang:ge-export-api:${geExportVersion}"
+  runtime "org.gosu-lang:ge-export:${geExportVersion}"
   runtime files("${System.properties['java.home']}/../lib/tools.jar")
+}
+
+task run(type: JavaExec) {
+  classpath = sourceSets.main.runtimeClasspath
+  main = 'BuildExporter'
+//  maxHeapSize = '2g'
+//  debug = true
 }
